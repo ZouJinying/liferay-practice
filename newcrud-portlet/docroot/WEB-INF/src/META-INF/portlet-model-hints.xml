@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.Hotel.model.Hotel">
+		<field name="uuid" type="String" />
+		<field name="hotelId" type="long" />
+		<field name="name" type="String" />
+		<field name="address" type="String" />
+		<field name="phone" type="String" />
+		<field name="quantityRooms" type="String" />
+	</model>
+</model-hints>

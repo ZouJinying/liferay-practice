@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.Hotel">
+	<author>jes</author>
+	<namespace>hotel</namespace>
+	<entity name="Hotel" table="Hotel" local-service="true"
+		remote-service="true" uuid="true">
+		<column name="hotelId" type="long" primary="true"></column>
+		<column name="name" type="String"></column>
+		<column name="address" type="String"></column>
+		<column name="phone" type="String"></column>
+		<column name="quantityRooms" type="String"></column>
+		<finder name="name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+		
+		<reference package-path="com.liferay.portlet.asset" entity="AssetLink" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry" />
+
+	</entity>
+</service-builder>
